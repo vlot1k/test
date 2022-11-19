@@ -47,7 +47,7 @@ class Example(QWidget):
         qp.end()
 
     def draw_rect(self, qp):
-        qp.setBrush(QColor(255, 255, 0))
+        qp.setBrush(QColor(randint(0, 255), randint(0, 255), randint(0, 255)))
         size = randint(10, 50)
         qp.drawEllipse(self.x - size // 2, self.y - size // 2, size, size)
 
